@@ -12,10 +12,10 @@ const Router = () => (
 	     path="/"
 	     component={StorePicker}
       />
-      <Router path="/store/:storeId"
+      <Route path="/store/:storeId"
 	      component={App}
       />
-      <Router component={NotFound}
+      <Route component={NotFound}
       />
       </Switch>
     </BrowserRouter>
