@@ -1,0 +1,23 @@
+import React from"react";
+import PropTypes from "prop-types";
+
+const Login = (props) => (
+  <nav className="login">
+    <h2> Login here</h2>
+    <p>sign in wti manage streo inventory</p>
+    <button className="github"
+	    onClick={() => props.authentication("Github")}>
+      Login with github
+    </button>
+    <button className="google"
+	    onClick={() => props.authentication("Google")}>
+      Login with Google
+    </button>
+  </nav>
+);
+
+Login.PropTypes = {
+  authenticate: PropTypes.func.isRequired
+}
+
+export default Login;
